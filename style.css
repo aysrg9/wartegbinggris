@@ -1,0 +1,220 @@
+body {
+  overflow-x: hidden !important;
+  background-color: #e2edff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-link:hover {
+  color: #0dcaf0 !important;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+  /* position: fixed; */
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand h2 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: dekoratif;
+}
+
+#showcase {
+  background-image: url("images/background/bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#showcase:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.showcase-content {
+  z-index: 2;
+  position: relative;
+}
+
+.btn-showcase:hover {
+  color: #ffffff;
+  background-color: #0dcaf0 !important;
+  border-color: #0dcaf0;
+}
+
+.btn-about:hover {
+  color: #ffffff !important;
+  background-color: #0dcaf0 !important;
+  border-color: #ffffff;
+}
+
+#whoWeAre hr {
+  width: 100px;
+  height: 4px;
+  opacity: 1;
+}
+
+.btn-whoWeAre:hover {
+  color: #ffffff !important;
+  background-color: #0dcaf0 !important;
+  border-color: #ffffff;
+}
+
+#getStarted h2 {
+  margin-right: 2rem;
+}
+
+.btn-getStarted:hover {
+  color: #ffffff !important;
+  background-color: #0dcaf0 !important;
+  border-color: #0dcaf0;
+}
+
+.heading hr {
+  width: 100px;
+  height: 4px;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+#readyToComing h2 {
+  margin-right: 2rem;
+}
+
+.readyToComing-img {
+  background-image: url("./images/readyToComing-img.jpg");
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.readyToComing-img::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.readyToComing-content {
+  position: relative;
+  z-index: 4;
+}
+/* FAQ */
+#faq a {
+  text-decoration: none;
+}
+#faq a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/* Contact */
+#contact i {
+  width: 40px;
+  height: 40px;
+}
+
+#contact h5 {
+  color: black !important;
+}
+/* Akhir contact */
+
+/* Map */
+#mapbox {
+  width: 100%;
+  height: 400px;
+}
+/* Akhir Map */
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+@media (max-width: 768px) {
+  #home p {
+    width: 100% !important;
+    font-size: 16px;
+  }
+
+  #getStarted h2 {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  #readyToComing h2 {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #home h1 {
+    width: 100% !important;
+    /* font-size: 34px; */
+  }
+
+  #about p {
+    width: 100% !important;
+  }
+
+  footer p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #whoWeAre .d-flex-left {
+    width: 100% !important;
+  }
+
+  #whoWeAre button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #contact .contact-flex-left {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+
+  #contact .contact-flex-right {
+    width: 100% !important;
+  }
+
+  #contact h5 {
+    font-size: 16px;
+  }
+
+  #contact .contact-flex-left p {
+    font-size: 14px;
+  }
+
+  .accordion-item-3 {
+    border-radius: 0 !important;
+  }
+  .accordion-item-4 {
+    border-radius: 0 !important;
+  }
+}
