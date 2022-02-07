@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Navigasi -->
-    <section id="showcase">
+    <section id="jumbtron">
       <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container-md">
           <a class="navbar-brand">
@@ -60,36 +60,37 @@
       <!-- Akhir Navigasi -->
 
       <!-- Jumbtron -->
-      <section id="beranda" class="h-100 showcase-content">
+      <section id="beranda" class="h-100 jumbtron-content">
         <div class="container-md h-100">
           <div class="d-flex h-100 flex-column justify-content-center align-items-center text-center">
-            <h1 class="display-1 fw-bold text-white">Your <span class="text-info">Favorite</span> Food</h1>
-            <p class="w-75 lead fw-normal text-white my-1" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="800 text-dark" data-aos-duration="2000">Berdiri sejak TIDAK ADA KURSI.</p>
-            <a href="#menu" class="btn btn-lg btn-outline-light bg-transparent rounded-pill btn-showcase fw-bold mt-4 p-3 px-4 fs-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000"> Harga mulai dari $4 </a>
-            <a href="#tentang"><span class="hero__scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800 text-dark" data-aos-duration="2000">Scroll down
-            <br>
+            <h1 class="display-1 fw-bold text-white" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800 text-dark" data-aos-duration="2000">Your <span class="text-info">Favorite</span> Food</h1>
+            <p class="w-75 lead fw-normal text-white my-1" id="tulis"></p>
+            <a href="#menu" class="btn btn-lg btn-outline-light bg-transparent rounded-pill btn-jumbtron fw-bold mt-4 p-3 px-4 fs-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000"> Harga mulai dari $4 </a>
+            <div class="beban">
+            <a href="#tentang"><p class="hero__scroll" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="800 text-dark" data-aos-duration="2000">Scroll down
 				    <i class="chevron bottom"></i>
-			      </span>
-            </a> 
+			      </p>
+            </a>
+            </div>
           </div>
         </div>
       </section>
       </section>
     <!-- Akhir Jumbtron -->
 
-    <!-- Iklan -->
+    <!-- Promo -->
     <section id="iklan" class="bg-info">
       <div class="container-md d-flex h-100 flex-column justify-content-center align-items-center text-center py-5">
         <div class="row mb-3 mt-4 heading">
         <div class="col">
-        <h1 class="display-4 fw-bold text-white mt-3" data-aos="zoom-in-down" data-aos-duration="1500"> Kami punya apa yang Anda butuhkan! </h1>
+        <h1 class="display-4 fw-bold text-white mt-3" data-aos="zoom-in-down" data-aos-duration="1000"> Kami punya apa yang Anda butuhkan! </h1>
         </div>
         </div>
-        <p class="w-70 lead text-white my-1 fs-4" data-aos="zoom-in-up" data-aos-duration="1500">Gunakan kode <b>AYOBELAJAR</b> untuk mendapatkan potongan harga S&k berlaku.</p>
-        <a href="https://discord.gg/bRp8PGnhHJ" target="_blank"><button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300" type="submit" class="btn btn-lg btn-outline-light rounded-pill bg-white text-info mt-4 fs-6 p-2 px-4 btn-about fw-bold">Read More.</button></a> 
+        <p class="w-70 lead text-white my-1 fs-4" data-aos="zoom-in-up" data-aos-duration="1000">Gunakan kode <b>AYOBELAJAR</b> untuk mendapatkan potongan harga S&k berlaku.</p>
+        <a href="https://discord.gg/bRp8PGnhHJ" target="_blank"><button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300" type="submit" class="btn btn-lg btn-outline-light rounded-pill bg-white text-info mt-4 fs-6 p-2 px-4 btn-promo fw-bold">Read More.</button></a> 
       </div>
     </section>
-    <!-- Akhir Iklan -->
+    <!-- Akhir Promo -->
 
     <!-- Tentang -->
     <section id="tentang" class="py-5">
@@ -122,15 +123,20 @@
         </div>
       </div>
     </section>
-    <section id="getStarted" class="bg-dark py-5">
-      <div class="container-md">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start">
-          <h2 class="text-white">Join discord server to get lots of promos!</h2>
-          <a href="https://discord.gg/bRp8PGnhHJ" target="_blank"><button href="#about" class="btn btn-lg btn-outline-info btn-getStarted bg-transparent text-info rounded-pill p-2 px-4 fs-6">Here <i class="bi bi-discord"></i></button></a>
+    <!-- Akhir Tentang -->
+
+    <!-- Card 1 -->
+    <section id="joindiscord" class="bg-dark" data-aos="fade-right" data-aos-duration="2000">
+      <div class="joindiscord-img">
+        <div class="container my-3 py-5">
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-center joindiscord-content">
+            <h2 class="text-white mb-md-0 mb-3">Join our discord server to get lots of promos!</h2>
+            <a href="https://discord.gg/bRp8PGnhHJ" target="_blank"><button href="#about" class="btn btn-lg btn-outline-info btn-joindiscord bg-transparent text-info rounded-pill p-2 px-4 fs-6">Here <i class="bi bi-discord"></i></button></a>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Akhir Tentang -->
+    <!-- Akhir Card -->
 
     <!-- Menu -->
     <section id="menu">
@@ -228,12 +234,12 @@
     </section>
     <!-- Akhir Menu -->
 
-    <!-- Card -->
-    <section id="readyToComing" class="bg-dark">
-      <div class="readyToComing-img">
+    <!-- Card 2 -->
+    <section id="warung" class="bg-dark" data-aos="fade-right" data-aos-duration="1000">
+      <div class="warung-img">
         <div class="container my-3 py-5">
-          <div class="d-flex flex-column flex-md-row align-items-center justify-content-center readyToComing-content">
-            <h2 class="text-white mb-md-0 mb-3">Warteg Bahasa Inggris</h2>
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-center warung-content">
+            <h2 class="text-white mb-md-0 mb-3">Warteg Bahasa Inggris.</h2>
           </div>
         </div>
       </div>
@@ -283,12 +289,10 @@
     </section>
     <!-- Akhir Services -->
 
-    <br /><br /><br /><br /><br />
-
     <!-- FAQ -->
-    <section id="faq" class="bg-dark">
+    <section id="faq" class="bg-dark" data-aos="zoom-in" data-aos-duration="1000">
       <div class="container text-center py-5">
-        <div class="mb-4 mt-5 heading" data-aos="fade-down" data-aos-duration="2000">
+        <div class="mb-4 mt-5 heading" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
           <h1 class="text-white">Frequently Asked Questions <i class="bi bi-question-circle"></i></h1>
           <hr class="underline text-info">
         </div>
@@ -296,7 +300,7 @@
           <div class="row">
             <div class="col-lg-6 mb-5">
               <!-- Item 1 -->
-              <div class="accordion-item accordion-item-1" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="accordion-item accordion-item-1" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">Di mana tepatnya Anda berada?</button>
                 </h2>
@@ -305,16 +309,16 @@
                 </div>
               </div>
               <!-- Item 2 -->
-              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">Menu di Rumah Makan kisaran Harga berapa?</button>
                 </h2>
                 <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-                  <div class="accordion-body">Untuk harga kita ga mahal - mahal karna ga laku ya kalo mahal, kamu bisa lihat di bagian <a href="#portfolio"> Menu</a> untuk lebih jelas.</div>
+                  <div class="accordion-body">Untuk harga kita ga mahal - mahal karna ga laku ya kalo mahal, kamu bisa lihat di bagian <a href="#menu"> Menu</a> untuk lebih jelas.</div>
                 </div>
               </div>
               <!-- Item 3 -->
-              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">Apa yang perlu saya ketahui tentang Rumah Makan?</button>
                 </h2>
@@ -325,7 +329,7 @@
             </div>
             <div class="col-lg-6">
               <!-- Item 4 -->
-              <div class="accordion-item accordion-item-4" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="accordion-item accordion-item-4" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">Bagaimana cara saya untuk menghubungi Anda?</button>
                 </h2>
@@ -334,7 +338,7 @@
                 </div>
               </div>
               <!-- Item 5 -->
-              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">Maukah Anda membantu saya dalam memilih desain?</button>
                 </h2>
@@ -343,7 +347,7 @@
                 </div>
               </div>
               <!-- Item 6 -->
-              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="accordion-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-six">Berapa lama waktu yang dibutuhkan untuk membangun situs web sederhana?</button>
                 </h2>
@@ -358,12 +362,10 @@
     </section>
     <!-- Akhir FAQ -->
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
-
     <!-- Contact -->
     <section id="contact">
       <div class="container-md text-center py-5">
-        <div class="mb-3 heading">
+        <div class="mb-3 mt-4 heading">
           <h1 class="" data-aos="fade-down" data-aos-duration="2000">Contact Us <i class="bi bi-chat-dots"></i></h1>
           <hr class="underline text-info" data-aos="fade-down" data-aos-duration="2000" />
         </div>
@@ -415,13 +417,11 @@
     </section>
     <!-- Akhir Contact -->
 
-    <br /><br />
-
     <!-- Map -->
-    <section id="map" class="my-4">
+    <section id="map" class="my-4 bg-dark" data-aos="zoom-in" data-aos-duration="1000">
       <div class="container-md text-center py-5">
         <div class="mb-4 mt-5 heading">
-          <h1 class="" data-aos="fade-right" data-aos-duration="2000">Location Warteg Bahasa Inggris <i class="bi bi-geo-alt"></i></h1>
+          <h1 class="text-light" data-aos="fade-right" data-aos-duration="2000">Location Warteg Bahasa Inggris <i class="bi bi-geo-alt"></i></h1>
           <hr class="underline text-info" data-aos="fade-right" data-aos-duration="2000"/>
         </div>
       <div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -440,21 +440,28 @@
     <!-- Footer -->
     <footer id="footer" class="py-4 bg-info position-relative">
       <div class="container-md text-center text-dark fs-6">
-        <p class="my-0">&copy; Copyright <span class="fw-bold">wartegbinggris</span>. All Rights Reserved</p>
+        <p class="my-0">&copy; Copyright <span class="fw-bold">wartegbinggris</span>. All Rights Reserved.</p>
         <p class="my-0">
-          Created with
+          Created & Design with
           <span class="fw-bold">Bootstrap 5</span> by
-          <span class="fw-bold">@Egiditya</span>
+          <span class="fw-bold">@Egiditya.</span>
         </p>
       </div>
     </footer>
     <!-- Akhir Footer -->
 
+    <!-- GSAP Animasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('#tulis', {duration: 2.5, delay: 1 , text: 'Berdiri sejak TIDAK ADA KURSI.'})
+    </script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Navbar -->
     <script src="navbar.js"></script>
-    <!-- Animasi -->
+    <!-- AOS Animasi -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({

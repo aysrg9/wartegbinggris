@@ -1,17 +1,22 @@
 /* Scroll Down */
 .hero__scroll {
-  position: absolute;
   bottom: 60px;
   width: 200px;
   margin: auto;
   display: block;
   cursor: pointer;
+  padding-top: 40px;
   padding-bottom: 40px;
   left: 0;
   right: 0;
   text-transform: uppercase;
   color: #0dcaf0;
 }
+
+.beban a {
+  text-decoration: none;
+}
+
 .hero__scroll .chevron {
   margin-top: 20px;
   display: block;
