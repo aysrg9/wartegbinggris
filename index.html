@@ -395,21 +395,26 @@
           </div>
 
           <div class="contact-flex-right w-50">
-            <form data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+            <div class="alert alert-dismissible fade show d-none client-notif" role="alert" style="background-color: #0dcaf0;">
+            <strong>Berhasil!</strong> Terima kasih, pesan Anda telah terkirim dan kami terima <i class="bi bi-heart-fill"></i>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400" name="warteg-contact-form">
               <div class="form-group" >
-                <label for="nama"><h5 class="text-uppercase fw-bold">Nama Lengkap</h5></label>
-                <input type="text" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="Nama Kamu..." required id="nama"/>
+                <label for="nama"><h5 class="text-uppercase fw-bold">Nama</h5></label>
+                <input type="text" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="Nama Kamu..." required id="nama" name="nama"/>
               </div>
               <div class="form-group my-3" >
                 <label for="email"><h5 class="text-uppercase fw-bold">Email</h5></label>
-                <input type="email" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="Email Kamu..." required id="email" />
+                <input type="email" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="Email Kamu..." required id="email" name="email"/>
               </div>
               <div class="form-group" >
                 <label for="pesan"><h5 class="text-uppercase fw-bold">Pesan</h5></label>
-                <textarea placeholder="Pesan yang ingin dikirim..." class="form-control font-weight-normal rounded-0" rows="3" required id="pesan"></textarea>
+                <textarea placeholder="Pesan yang ingin dikirim..." class="form-control font-weight-normal rounded-0" rows="3" required id="pesan" name="pesan"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-info btn-lg d-block text-white rounded px-4 font-weight-light float-end mt-3">Kirim <i class="bi bi-send"></i> </button>
+              <button type="submit" class="btn btn-kirim btn-info btn-lg d-block text-white rounded px-4 font-weight-light float-left mt-3">Kirim <i class="bi bi-send"></i> </button>
+              <button class="btn btn-loading btn-info btn-lg d-block text-white rounded px-4 font-weight-light float-left mt-3 btn-primary d-none" type="button" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button>
             </form>
           </div>
         </div>
@@ -450,6 +455,36 @@
     </footer>
     <!-- Akhir Footer -->
 
+    <!-- Contact -->
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIbUdcbgsGBBCxocT-1oA_oKn00oGCShxfeOorO5IQhhLTgtmFltuM-FgD9iiOkw/exec'
+    const form = document.forms['warteg-contact-form']
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const clientNotif = document.querySelector('.client-notif');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // tombol kirim di klik
+      //tampilkan tombol loading, hilangkan tombol kirim
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        //tampilkan tombol kirim, hilangkan tombol loading
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        // tapilkan alert
+        clientNotif.classList.toggle('d-none');
+        //reset form jika berhasil kirim
+        form.reset();
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+    <!-- Akhir Contact -->
+
     <!-- GSAP Animasi -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
@@ -457,10 +492,16 @@
       gsap.registerPlugin(TextPlugin);
       gsap.to('#tulis', {duration: 2.5, delay: 1 , text: 'Berdiri sejak TIDAK ADA KURSI.'})
     </script>
+    <!-- Akhir Animasi Gsap -->
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Akhir Bottstrap -->
+
     <!-- Navbar -->
     <script src="navbar.js"></script>
+    <!-- Akhir Navbar -->
+
     <!-- AOS Animasi -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -468,5 +509,6 @@
         once: true,
       });
     </script>
+    <!-- Akhir Animasi AOS -->
   </body>
 </html>
