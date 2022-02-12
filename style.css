@@ -21,6 +21,11 @@ body {
   font-size: 16px;
   margin-bottom: 0;
   margin-top: 0;
+  display: inline-block;
+}
+
+.navbar-brand h2 i {
+  color: #0dcaf0;
 }
 /* akhir narbar */
 
@@ -185,6 +190,7 @@ footer {
 }
 /* Akhir Footer */
 
+/* Responsive */
 @media (max-width: 768px) {
   #home p {
     width: 100% !important;
@@ -251,3 +257,4 @@ footer {
     border-radius: 0 !important;
   }
 }
+/* Akhir Responsive */
