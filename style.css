@@ -10,6 +10,10 @@ body {
   text-decoration: underline;
 }
 
+.nav-link {
+  font-size: 15px;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 4;
@@ -17,19 +21,19 @@ body {
 
 .navbar-brand h2 {
   font-family: "Pacifico", cursive;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 0;
   margin-top: 0;
   display: inline-block;
 }
 
-.navbar-brand h2 i {
+.navbar-brand i {
   color: #0dcaf0;
 }
 /* akhir navbar */
 
 /* Jumbtron */
-#jumbtron {
+#navbar {
   background-image: url("images/background/bg.jpg");
   width: 100%;
   height: 100vh;
@@ -39,7 +43,7 @@ body {
   position: relative;
 }
 
-#jumbtron:after {
+#navbar:after {
   content: "";
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -61,6 +65,12 @@ body {
   border-color: #0dcaf0;
 }
 /* akhir Jumbtron */
+
+/* Waktu */
+.jam {
+  color: white;
+}
+/* Akhir Waktu */
 
 /* Tentang Kami */
 #tentang hr {
@@ -227,6 +237,10 @@ footer {
     width: 100% !important;
   }
 
+  .navbar-brand .d-flex-left {
+    width: 100% !important;
+  }
+
   #tentang button {
     display: block;
     margin: 0 auto;
@@ -254,6 +268,77 @@ footer {
   }
   .accordion-item-4 {
     border-radius: 0 !important;
+  }
+}
+/* Akhir Responsive */
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #0dcaf0;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+/* Akhir Hamburger */
+
+/* Hamburger Menu Animasi */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+/* Akhir Animasi */
+
+/* Resposive Navbar Toggler Ukuran */
+/* Ukuran Table */
+@media screen and (max-width: 768px) {
+  .navbar #navmenu {
+    width: 50%;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    display: flex;
   }
 }
 /* Akhir Responsive */

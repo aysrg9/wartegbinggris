@@ -22,21 +22,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Load Page -->
+    <link rel="stylesheet" href="loadpage.css">
     <title>Warteg B. Inggris</title>
   </head>
   <body>
+    <!-- Load Page -->
+    <div class="page-load animate-slide-up" area-hidden="true">
+        <div class="loadingio-spinner-eclipse-jf5e22bpfve"><div class="ldio-g0e1vuxutig">
+            <div></div>
+            </div></div>
+    </div>
+    <div class="blank-white animate-slide-up"></div>
+    <!-- Akhir Load Page -->
+
     <!-- Navigasi -->
-    <section id="jumbtron">
+    <section id="navbar">
       <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container-md">
           <a class="navbar-brand">
-            <i class="bi bi-cart3"></i>
+            <i class="bi bi-cart3 d-flex-left w-10 d-none d-lg-inline-block"></i>
             <h2 class="text-info text-uppercase">Warteg</h2>
             <h2 class="text-info text-uppercase">Bahasa Inggris</h2>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="menu-toggle">
+          <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span></span>
+          <span></span>
+          <span></span>
+          </input>
+          </div>
+
 
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
@@ -71,6 +87,9 @@
             <h1 class="display-1 fw-bold text-white" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800 text-dark" data-aos-duration="2000">Your <span class="text-info">Favorite</span> Food</h1>
             <p class="w-75 lead fw-normal text-white my-1" id="tulis"></p>
             <a href="#menu" class="btn btn-lg btn-outline-light bg-transparent rounded-pill btn-jumbtron fw-bold mt-4 p-3 px-4 fs-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000"> Harga mulai dari $4 </a>
+             <div class="jam mt-4">
+            <div id="waktu" onload="showTime()"></div>
+            </div>
             <div class="beban">
             <a href="#tentang"><p class="hero__scroll" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="800 text-dark" data-aos-duration="2000">Scroll down
 				    <i class="chevron bottom"></i>
@@ -511,5 +530,13 @@
       });
     </script>
     <!-- Akhir Animasi AOS -->
+
+    <!-- Loadpage -->
+    <script src="loadpage.js"></script>
+    <!-- Akhir Load Page -->
+
+    <!-- Waktu -->
+    <script src="clock.js"></script>
+    <!-- Akhir Waktu -->
   </body>
 </html>
