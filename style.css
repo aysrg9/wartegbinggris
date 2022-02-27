@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
   background-color: #e2edff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 /* Navbar */
@@ -12,6 +12,8 @@ body {
 
 .nav-link {
   font-size: 15px;
+  font-family: "Poppins";
+  color: #0dcaf0;
 }
 
 .navbar {
@@ -20,15 +22,146 @@ body {
 }
 
 .navbar-brand h2 {
-  font-family: "Pacifico", cursive;
+  font-family: "Pacifico";
   font-size: 15px;
   margin-bottom: 0;
   margin-top: 0;
   display: inline-block;
+  cursor: pointer;
+}
+
+.navbar-brand h2:hover {
+  text-decoration: underline;
 }
 
 .navbar-brand i {
   color: #0dcaf0;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:hover ~ span:nth-child(2) {
+  background-color: #0dcaf0;
+}
+
+.menu-toggle input:hover ~ span:nth-child(4) {
+  background-color: #0dcaf0;
+}
+
+.menu-toggle input:hover ~ span:nth-child(3) {
+  background-color: #0dcaf0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+/* Responsive */
+
+/* Ukuran Table */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    display: flex;
+  }
+  #slider .carousel-item {
+    height: 50vh;
+  }
+  .carousel-item img {
+    width: 745px;
+    height: 407px;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  nav ul {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul li {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    border: 2px solid #0dcaf0;
+    border-radius: 20px;
+  }
+  nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #0dcaf0;
+  }
+  .nav-link:hover {
+    color: #0dcaf0 !important;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 /* akhir navbar */
 
@@ -69,6 +202,8 @@ body {
 /* Waktu */
 .jam {
   color: white;
+  font-size: 19px;
+  font-weight: bold;
 }
 /* Akhir Waktu */
 
@@ -196,6 +331,10 @@ body {
 /* Footer */
 footer {
   background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+footer p {
+  font-family: Helvetica;
 }
 /* Akhir Footer */
 
