@@ -62,7 +62,7 @@ body {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 3px;
   transition: all 0.5s;
 }
@@ -77,16 +77,16 @@ body {
 }
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-  background-color: white;
+  background-color: #0dcaf0;
   transform: rotate(45deg) translate(-1px, -1px);
 }
 
 .menu-toggle input:checked ~ span:nth-child(4) {
-  background-color: white;
+  background-color: #0dcaf0;
   transform: rotate(-45deg) translate(-1px, 0);
 }
 
-.menu-toggle input:hover ~ span:nth-child(2) {
+/* .menu-toggle input:hover ~ span:nth-child(2) {
   background-color: #0dcaf0;
 }
 
@@ -96,7 +96,7 @@ body {
 
 .menu-toggle input:hover ~ span:nth-child(3) {
   background-color: #0dcaf0;
-}
+} */
 
 .menu-toggle input:checked ~ span:nth-child(3) {
   opacity: 0;
@@ -115,19 +115,6 @@ body {
 @media screen and (max-width: 767px) {
   .menu-toggle {
     display: flex;
-  }
-  #slider .carousel-item {
-    height: 50vh;
-  }
-  .carousel-item img {
-    width: 745px;
-    height: 407px;
-  }
-  .carousel-control-prev-icon {
-    display: none;
-  }
-  .carousel-control-next-icon {
-    display: none;
   }
   nav ul {
     right: 0;
@@ -405,77 +392,6 @@ footer p {
   }
   .accordion-item-4 {
     border-radius: 0 !important;
-  }
-}
-/* Akhir Responsive */
-
-/* Hamburger */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  height: 20px;
-  justify-content: space-between;
-  position: relative;
-}
-
-.menu-toggle input {
-  position: absolute;
-  width: 40px;
-  height: 28px;
-  left: -5px;
-  top: -3px;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background-color: #0dcaf0;
-  border-radius: 3px;
-  transition: all 0.5s;
-}
-/* Akhir Hamburger */
-
-/* Hamburger Menu Animasi */
-.menu-toggle span:nth-child(2) {
-  transform-origin: 0 0;
-}
-
-.menu-toggle span:nth-child(4) {
-  transform-origin: 0 100%;
-}
-
-.menu-toggle input:checked ~ span:nth-child(2) {
-  background-color: white;
-  transform: rotate(45deg) translate(-1px, -1px);
-}
-
-.menu-toggle input:checked ~ span:nth-child(4) {
-  background-color: white;
-  transform: rotate(-45deg) translate(-1px, 0);
-}
-
-.menu-toggle input:checked ~ span:nth-child(3) {
-  opacity: 0;
-  transform: scale(0);
-}
-/* Akhir Animasi */
-
-/* Resposive Navbar Toggler Ukuran */
-/* Ukuran Table */
-@media screen and (max-width: 768px) {
-  .navbar #navmenu {
-    width: 50%;
-  }
-}
-
-/* Ukuran Mobile */
-@media screen and (max-width: 767px) {
-  .menu-toggle {
-    display: flex;
   }
 }
 /* Akhir Responsive */
