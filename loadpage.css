@@ -1,6 +1,7 @@
 /* Load Page */
 .no-scroll {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 .page-load {
   position: fixed;

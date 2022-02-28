@@ -21,7 +21,7 @@
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Pacifico&family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Montserrat&family=Oswald&family=Pacifico&family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Load Page -->
     <link rel="stylesheet" href="loadpage.css">
     <title>Warteg B. Inggris</title>
@@ -82,9 +82,9 @@
       <section id="beranda" class="h-100 jumbtron-content">
         <div class="container-md h-100">
           <div class="d-flex h-100 flex-column justify-content-center align-items-center text-center">
-            <h1 class="display-1 fw-bold text-white" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1300 text-dark" data-aos-duration="2000">Your <span class="text-info">Favorite</span> Food</h1>
+            <h1 id="opening" class="display-1 fw-bold text-white" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1300 text-dark" data-aos-duration="2000">Your <span class="text-info">Favorite</span> Food</h1>
             <p class="w-75 lead fw-normal text-white my-1" id="tulis"></p>
-            <a href="#menu" class="btn btn-lg btn-outline-light bg-transparent rounded-pill btn-jumbtron fw-bold mt-4 p-3 px-4 fs-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500"> Harga mulai dari $4 </a>
+            <a id="buttonmenu" href="#menu" class="btn btn-lg btn-outline-light bg-transparent rounded-pill btn-jumbtron fw-bold mt-4 p-3 px-4 fs-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500"> Harga mulai dari $4 </a>
             <div class="jam mt-4"  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
             <div id="waktu" onload="showTime()"></div>
             </div>
@@ -164,14 +164,14 @@
     <section id="menu">
       <div class="container-md text-center py-5">
         <div class="row mb-3 mt-4 heading">
-          <div class="col">
+          <div class="col" data-aos="fade-down" data-aos-duration="1500">
             <h1 class="fw-bold">Daftar Menu <i class="bi bi-card-list"></i></h1>
             <hr class="underline text-info"/>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/1.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Fried Chiken</p>
@@ -180,7 +180,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/2.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Fried Rice</p>
@@ -189,7 +189,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/3.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Beef Burger</p>
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/4.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Hot Coffe</p>
@@ -207,7 +207,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/5.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Juices</p>
@@ -216,7 +216,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/6.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Ice Chocolatte</p>
@@ -225,7 +225,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/7.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Kebab Turki</p>
@@ -234,7 +234,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/8.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Rendang</p>
@@ -243,7 +243,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="images/produk/9.webp" class="card-img-top" alt="https://unsplash.com/" title="Source : https://unsplash.com/" />
               <div class="card-body">
                 <p class="card-text mb-0 text-center fw-bold">Pizza</p>
@@ -516,7 +516,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to('#tulis', {duration: 2.5, delay: 1.5 , text: 'Berdiri sejak TIDAK ADA KURSI.'})
+      gsap.to('#tulis', {duration: 2.5, delay: 1.5 , text: 'Berdiri sejak Tidak Ada Kursi.'})
     </script>
     <!-- Akhir Animasi Gsap -->
 
