@@ -85,7 +85,7 @@
             <h1 class="display-1 fw-bold text-white" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1300 text-dark" data-aos-duration="2000">Your <span class="text-info">Favorite</span> Food</h1>
             <p class="w-75 lead fw-normal text-white my-1" id="tulis"></p>
             <a href="#menu" class="btn btn-lg btn-outline-light bg-transparent rounded-pill btn-jumbtron fw-bold mt-4 p-3 px-4 fs-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500"> Harga mulai dari $4 </a>
-            <div class="jam mt-4">
+            <div class="jam mt-4"  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
             <div id="waktu" onload="showTime()"></div>
             </div>
             <div class="beban">
@@ -164,7 +164,7 @@
     <section id="menu">
       <div class="container-md text-center py-5">
         <div class="row mb-3 mt-4 heading">
-          <div class="col" data-aos="fade-down" data-aos-duration="1500">
+          <div class="col">
             <h1 class="">Daftar Menu <i class="bi bi-card-list"></i></h1>
             <hr class="underline text-info"/>
           </div>
@@ -393,6 +393,7 @@
         </div>
         <div class="d-flex flex-lg-row flex-column contact-flex mt-4 justify-content-between">
           <div class="contact-flex-left">
+            <a href="https://www.google.com/maps/place/Monumen+Nasional/@-6.175392,106.827153,12z/data=!4m5!3m4!1s0x0:0x3d2ad6e1e0e9bcc8!8m2!3d-6.1753924!4d106.8271528?hl=id" target="_blank">
             <div class="d-flex align-items-center text-start" data-aos="fade-up" data-aos-duration="2000">
               <i class="fas fa-map-marker-alt text-white bg-info p-3 d-flex align-items-center justify-content-center me-3"></i>
               <div class="">
@@ -400,6 +401,8 @@
                 <p class="m-0">Jl Kita Bisa No. 01, Jakarta, Indonesia</p>
               </div>
             </div>
+            </a>
+            <a href="tel:+6285899999999" target="_blank">
             <div class="d-flex align-items-center my-4 text-start" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
               <i class="fas fa-phone-alt text-white bg-info p-3 d-flex align-items-center justify-content-center me-3"></i>
               <div class="">
@@ -407,6 +410,8 @@
                 <p class="m-0">+62 858-XXXX-XXXX</p>
               </div>
             </div>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=egyditya@gmail.com" target="_blank">
             <div class="d-flex align-items-center text-start" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
               <i class="fas fa-envelope text-white bg-info p-3 d-flex align-items-center justify-content-center me-3"></i>
               <div class="">
@@ -415,6 +420,7 @@
               </div>
             </div>
           </div>
+          </a>
 
           <div class="contact-flex-right w-50">
             <div class="alert alert-dismissible fade show d-none client-notif" role="alert" style="background-color: #0dcaf0;">
@@ -422,17 +428,14 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400" name="warteg-contact-form">
-              <div class="form-group" >
-                <label for="nama"><h5 class="text-uppercase fw-bold">Nama</h5></label>
-                <input type="text" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="..." required id="nama" name="nama"/>
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="Your Name..." required id="nama" name="nama"/>
               </div>
-              <div class="form-group my-3" >
-                <label for="email"><h5 class="text-uppercase fw-bold">Email</h5></label>
-                <input type="email" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="..." required id="email" name="email"/>
+              <div class="form-group my-3">
+                <input type="email" class="form-control form-control-lg font-weight-normal rounded-0 fs-6" placeholder="Your Email..." required id="email" name="email"/>
               </div>
-              <div class="form-group" >
-                <label for="pesan"><h5 class="text-uppercase fw-bold">Pesan</h5></label>
-                <textarea placeholder="..." class="form-control font-weight-normal rounded-0" rows="3" required id="pesan" name="pesan"></textarea>
+              <div class="form-group">
+                <textarea placeholder="Subject..." class="form-control font-weight-normal rounded-0" rows="3" required id="pesan" name="pesan"></textarea>
               </div>
 
               <button type="submit" class="btn btn-kirim btn-info btn-lg d-block text-white rounded px-4 font-weight-light float-left mt-3">Kirim <i class="bi bi-send"></i> </button>
