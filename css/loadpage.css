@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* Load Page */
 .no-scroll {
   overflow-y: hidden;
@@ -62,34 +66,3 @@
 .ldio-g0e1vuxutig div {
   box-sizing: content-box;
 }
-
-.blank-white {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  /* background:rgb(20, 20, 20); */
-  background: white;
-  z-index: 8500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 3rem;
-  /* text-transform: uppercase; */
-  font-family: Poppins;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.up-wrap {
-  /* background: brown; */
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.up-wrap .word2 {
-  margin-left: 10px;
-}
-/* Load Page Akhir */

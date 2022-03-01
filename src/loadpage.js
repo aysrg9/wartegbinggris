@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
   document.querySelector(".blank-white").style.backgroundColor = "crimson";
   gsap.from(".appear-text", {
     duration: 1,
-    delay: 0.9,
+    delay: 0,
     y: 100,
     stagger: 0.1,
     ease: "Power3.easeInOut",
